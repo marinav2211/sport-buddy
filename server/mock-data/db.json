@@ -1,0 +1,7 @@
+{
+  "users": [
+    { "name": "Dima", "date-of-birth": "03.12.1995", "sex": "male" },
+    { "name": "Anna", "date-of-birth": "13.07.1997", "sex": "female" },
+    { "name": "Kate", "date-of-birth": "05.04.1997", "sex": "female" }
+  ]
+}

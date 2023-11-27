@@ -7,6 +7,7 @@ import Communities from "./components/Communities.vue";
 import Maps from "./components/Maps.vue";
 import Profile from "./components/Profile.vue";
 import Layout from "./layouts/Layout.vue";
+import vuetify from "../plugins/vuetify.js";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,4 +28,5 @@ const router = createRouter({
 
 createApp(App)
   .use(router)
+  .use(vuetify)
   .mount('#app')

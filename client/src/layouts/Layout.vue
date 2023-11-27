@@ -1,33 +1,35 @@
 <script>
-import {useMediaQueries} from "../composables/useMediaQueries.js";
-
-import DesktopLayout from "./DesktopLayout.vue";
-import MobileLayout from "./MobileLayout.vue";
-
+import { useMediaQueries } from '../composables/useMediaQueries.js'
+import DesktopLayout from './DesktopLayout.vue'
+import MobileLayout from './MobileLayout.vue'
+import NavigationBar from '../components/NovigationBar.vue'
 
 export default {
-  name: "Layout",
+  name: 'Layout',
   components: {
     DesktopLayout,
-    MobileLayout
+    MobileLayout,
+    NavigationBar,
   },
   setup() {
-    const {isDesktop} = useMediaQueries()
-
+    const { isDesktop } = useMediaQueries()
     return {
-      isDesktop
+      isDesktop,
     }
-  }
+  },
 }
 </script>
 
 <template>
-<div>
-  <DesktopLayout v-if="isDesktop" />
-  <MobileLayout v-else/>
-</div>
+  <div class="h-[100vh] layout">
+    <NavigationBar />
+    <DesktopLayout v-if="isDesktop" />
+    <MobileLayout v-else />
+  </div>
 </template>
 
 <style scoped>
-
+.layout {
+  background-color: #014646;
+}
 </style>

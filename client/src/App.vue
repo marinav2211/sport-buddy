@@ -1,13 +1,9 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
-  <div v-for="user in users">
-    <div class="user">
-      <p>{{ getFullDataOfUser(user) }}</p>
+  <VApp theme="dark" >
+    <div id="app">
+      <router-view></router-view>
     </div>
-  </div>
-
+  </VApp>
 </template>
 
 <script>

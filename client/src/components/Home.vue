@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-    <p>Welcome to the home page.</p>
-  </div>
+  <v-container class="fill-height">
+
+
+  </v-container>
 </template>
 
 <script>
+
 export default {
   name: 'Home'
 }

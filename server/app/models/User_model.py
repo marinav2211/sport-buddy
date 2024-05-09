@@ -11,5 +11,12 @@ class User(Base):
     email = Column(String, unique=True, nullable=False)
     password = Column(String)
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "password": self.password,
+            "email": self.email,
+        }
 
 

@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <NavigationBar />
     <header style="display: flex;  justify-content: space-between">
       <div>SportBuddy</div>
     </header>
@@ -14,8 +15,11 @@
 </template>
 
 <script>
+import NavigationBar from "../components/NovigationBar.vue";
+
 export default {
   name: 'MobileLayout',
+  components: {NavigationBar},
 
 }
 </script>

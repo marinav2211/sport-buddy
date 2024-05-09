@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div class="h-[100vh] layout">
-    <NavigationBar />
+
     <DesktopLayout v-if="isDesktop" />
     <MobileLayout v-else />
   </div>

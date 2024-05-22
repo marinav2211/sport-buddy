@@ -6,7 +6,8 @@ from sqlalchemy import pool
 from alembic import context
 from app.db.base import Base
 
-from app.models.User_model import User
+from app.models.user_model import User
+from app.models.event_model import Event
 
 
 import sys

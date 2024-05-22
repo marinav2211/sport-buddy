@@ -1,9 +1,14 @@
+from dotenv import load_dotenv
+import os
 from sqlalchemy import URL
 
+load_dotenv()
+
+
 connection_string = URL.create(
-  'postgresql',
-  username='marinochka2288',
-  password='7QfTEXqW0Pvb',
-  host='ep-cold-wood-42073061.us-east-2.aws.neon.tech',
-  database='neondb',
+    drivername='postgresql+asyncpg',
+    username=os.getenv('USERNAME'),
+    password=os.getenv('PASSWORD'),
+    host=os.getenv('HOST'),
+    database='neondb',
 )
